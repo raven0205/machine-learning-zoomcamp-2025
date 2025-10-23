@@ -1,0 +1,19 @@
+
+FROM agrigorev/zoomcamp-model:2025
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+WORKDIR /code
+
+ENV PATH="/code/.venv/bin:$PATH"
+
+COPY "pyproject.toml" "uv.lock" "_.python-version" ./
+
+RUN uv sync --locked
+
+COPY "predictv2.py" "pipeline_v1.bin" ./
+
+EXPOSE 9696
+
+ENTRYPOINT ["uvicorn", "predictv2:app", "--host", "0.0.0.0", "--port", "9696"]
+
+

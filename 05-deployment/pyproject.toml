@@ -1,0 +1,26 @@
+[project]
+name = "pypi-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12.3"
+dependencies = [
+    "fastapi>=0.116.1",
+    "scikit-learn>=1.6.1",
+    "uvicorn>=0.35.0",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+    "uv",
+    "joblib",
+    "requests",
+    "typing",
+    "pydantic"
+]
+
+[dependency-groups]
+dev = [
+    "requests>=2.32.4",
+]
