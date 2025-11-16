@@ -1,6 +1,6 @@
 ## HDB Resale Price Prediction Model Deployment
 
-![This is a house image.](image/house.webp)
+<img src="image/house.webp" alt="HDB Resale Price" width="200"/>
 
 **Project Overview** 
 * This project implements and deploys a machine learning model designed to forecast the resale prices of Housing and Development Board (HDB) flats in Singapore. The aim is to allow stakeholders like real estate analysts, investors or buyers to learn about the recent trend and estimate property worth for their decision-making. The final deliverable is a containerized web service that provides real-time price predictions via a simple API endpoint.
