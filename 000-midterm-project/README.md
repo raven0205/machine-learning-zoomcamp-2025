@@ -1,6 +1,6 @@
 ## HDB Resale Price Prediction Model Deployment
 
-![This is a house image.](/image/house.webp)
+![This is a house image.](image/house.webp)
 
 **Project Overview** 
 * This project implements and deploys a machine learning model designed to forecast the resale prices of Housing and Development Board (HDB) flats in Singapore. The aim is to allow stakeholders like real estate analysts, investors or buyers to learn about the recent trend and estimate property worth for their decision-making. The final deliverable is a containerized web service that provides real-time price predictions via a simple API endpoint.
@@ -32,6 +32,8 @@ The dataset used contains all the listed features, excluding `Flat Model` and `R
 ```bash
 
 000-midterm-project  # hdb-price-predictor project
+├── image
+|   └── house.webp
 ├── Dockerfile   # Docker deployment setup
 ├── features.py  # 2. To clean and extract the feature
 ├── load.py      # 1. To load the dataset
