@@ -32,8 +32,6 @@ The dataset used contains all the listed features, excluding `Flat Model` and `R
 ```bash
 
 000-midterm-project  # hdb-price-predictor project
-├── image
-|   └── house.webp
 ├── Dockerfile   # Docker deployment setup
 ├── features.py  # 2. To clean and extract the feature
 ├── load.py      # 1. To load the dataset
@@ -45,8 +43,10 @@ The dataset used contains all the listed features, excluding `Flat Model` and `R
 ├── README.md    
 ├── test.py      # 7. A sample test file to predict on
 ├── train.py     # 3. To split data and save trained model
-└── data
-    └── hdb_resale_data_202...csv
+├── image/
+│   └── house.webp       # Example image
+└── data/
+    └── hdb_resale_data_2019-2023.csv  # Dataset
 ```
 
 ## ⚙️ How to Run the Project
