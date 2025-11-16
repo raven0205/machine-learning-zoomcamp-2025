@@ -1,7 +1,7 @@
 # 000-midterm-project/test.py
 
 import requests
-url = "http://localhost:8000/predict"
+url = "http://localhost:9696/predict" # ensure the same [port] as the app in predict.py
 
 client = {
     "month": "2024-01",
